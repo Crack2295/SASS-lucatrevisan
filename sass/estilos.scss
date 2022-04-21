@@ -1,0 +1,102 @@
+$color_1: rgb(253, 125, 21);
+$font-family_1: 'Roboto Condensed', sans-serif;
+
+body {
+	background: linear-gradient(to top, #f77b28,#181818 , #665b4f, #f77b28);
+}
+h1 {
+	font-family: $font-family_1;
+	font-weight: bolder;
+	font-style: italic;
+	color: $color_1;
+}
+h2 {
+	font-family: $font-family_1;
+	font-weight: bolder;
+	font-style: italic;
+	color: $color_1;
+}
+h3 {
+	font-family: $font-family_1;
+	font-weight: bolder;
+	font-style: italic;
+	color: $color_1;
+}
+h4 {
+	font-family: $font-family_1;
+	font-weight: bolder;
+	font-style: italic;
+	color: $color_1;
+}
+h5 {
+	font-family: $font-family_1;
+	font-weight: bolder;
+	font-style: italic;
+	color: $color_1;
+}
+h6 {
+	font-family: $font-family_1;
+	font-weight: bolder;
+	font-style: italic;
+	color: $color_1;
+}
+p {
+	font-family: $font-family_1;
+	font-weight: bold;
+	list-style: none;
+}
+a {
+	font-family: $font-family_1;
+	font-weight: bold;
+	list-style: none;
+}
+li {
+	font-family: $font-family_1;
+	font-weight: bold;
+	list-style: none;
+}
+
+/* header fondo */
+
+
+header {
+	background-image: linear-gradient( 0deg, rgba(73, 69, 69, 0.5), rgba(0, 0, 0, 0.5) ) ,url(../img/pexels-photo.jpg);
+}
+
+/* main */
+
+.card {
+	margin: 15px;
+}
+.centrar__texto {
+	margin-top: 50px;
+	h2 {
+		margin: 20px;
+	}
+}
+.container-fluid {
+	ul {
+		li {
+			display: flex;
+			padding: 5px 35px;
+			align-items: center;
+			text-align: center;
+			flex-direction: column;
+		}
+	}
+}
+/* aside */
+
+aside {
+	background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ) ,url(../img/aside.png);
+	padding: 40px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* footer */
+footer {
+	background-image: linear-gradient( 0deg, rgba(73, 69, 69, 0.5), rgba(0, 0, 0, 0.5) ) ,url(../img/pexels-photo.jpg);
+	padding: 30px;
+}
