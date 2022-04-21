@@ -1,0 +1,585 @@
+/* mobile first */
+
+*{
+    margin: 0;
+    box-sizing: 0;
+}
+
+p, a, li{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 18px;
+}
+
+h1,h2,h3,h4 {
+    font-family: hubba2;
+}
+
+body{
+    background-color: rgb(253, 125, 21);
+}
+
+.color-acento{
+    color: aliceblue;
+}
+
+.color-acento-1{
+    color: rgb(253, 125, 21);
+}
+
+@font-face {
+    font-family: hubba1;
+    src: url(/letra/Hubba-Oblique.otf);
+}
+@font-face {
+    font-family: hubba2;
+    src: url(/letra/HubbaShadow-SemiBoldOblique.otf);
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover{
+    color: rgb(253, 125, 21);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/*header  */
+
+header{
+    background-image: linear-gradient(
+        0deg,
+        rgba(73, 69, 69, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(../img/pexels-photo.jpg);
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+header .menu a{
+    padding-right: 30px;
+    display: inline;
+    text-align: center ;
+    padding-bottom: 10px;
+}
+
+.titulo{
+    text-align: center;
+    background-color: rgb(50, 50, 50);
+
+}
+button{
+    font-size: 10px;
+    color: rgb(253, 125, 21);
+    font-weight: bold;
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: 2px solid black;
+    border: 2px 2px 10px rgb(0, 0, 0, 0,5);
+    background-color: rgb(50, 50, 50);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+button:hover{
+    background-color: rgb(253, 125, 21);
+    color:aliceblue;
+}
+
+
+
+/* main */
+
+#nosotros{
+    justify-content: center;
+    flex-direction: column;
+}
+
+#nosotros .container{
+    display: flex;
+    text-align: center;
+    padding: 10px 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#profesionales {
+    text-align: center;
+    background-color: rgb(50, 50, 50);
+}
+#profesionales .container{
+    padding: 100px 0px;
+}
+#profesionales h2{
+    margin-top: 5px;
+}
+
+.profes{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+.carta{
+    border: 5px solid rgb(253, 125, 21);
+    background-color: rgb(50, 50, 50);
+    color: rgb(253, 125, 21);
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+    line-height: 40px;
+
+}
+#caracteristicas .container{
+    text-align: center;
+    padding: 50px 12px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#caracteristicas ul{
+    list-style: none;
+    margin: 16px 0px;
+    font-weight: bold
+}
+/* ASIDE */
+aside .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(../img/aside.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 45px;
+    
+    margin: auto;
+}
+
+#info{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(50, 50, 50);
+}
+
+#info h2{
+    font-size: 3vw;
+}
+
+#info button{
+    font-size: 1vw;
+}
+
+.imgs__info{
+    display: flex;
+}
+
+/* FOOTER */
+
+footer{
+    background-image: linear-gradient(
+        0deg,
+        rgba(73, 69, 69, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(../img/pexels-photo.jpg) ;
+}
+footer p{
+    margin: 0;
+    color: rgb(253, 125, 21);
+}
+
+footer .container{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.iconos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconos ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    text-align: center;
+}
+
+.iconos ul li a{
+    display: block;
+    padding: 0 10px;
+    color: rgb(253, 125, 21);
+    line-height: 50px;
+    font-size: 20px;
+    box-shadow: 0 3px 0px rgba(0, 0, 0, 0.2);
+    transition: .2s;
+}
+.iconos ul:hover a{
+    filter: blur(2px);
+}
+
+/* transformaciones */
+
+.iconos ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 0px rgba(0, 0, 0, 0.4);
+    filter: none;
+}
+.iconos ul li .facebook:hover{
+    background: var(--facebook);
+}
+
+
+/* HOJA DE SERVICIOS */
+/* SE APLICA GRID. mobile*/
+
+.grid{
+    display: grid;
+    gap: 5px;
+    padding: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1, auto);
+    
+}
+
+.grid .tituloss{
+    grid-column: 1/-1;
+}
+
+.grid div{
+    padding: 5px;
+    background-color: rgb(50, 50, 50);
+    color: rgb(253, 125, 21);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid .img__clase{
+    width: 100%;
+    height: auto;
+}
+
+.grid div h4{
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+.grid .sidebar{
+    grid-column: 1 / -1;
+}
+
+/* HOJA DE HORARIOS */
+
+#titulo .container{
+    display: flex;
+    text-align: center;
+    padding: 10px 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#horarios .horarios__centrado{
+    display: flex;
+    text-align: center;
+    padding: 10px 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 10px solid black;
+}
+#horarios .horarios__centrado img{
+    padding:10px;
+}
+
+/* HOJA DE SUPLEMENTOS */
+
+.titulo__suple{
+    background-color: rgb(50, 50, 50);
+    color: rgb(253, 125, 21);
+    text-align: center;
+    padding: 10px;
+}
+
+.titulo__suple{
+    text-transform: uppercase;
+}
+
+/* aplicaremos grid nuevamente, para mobile y luego desktop, mobil en una columnas */
+
+
+.grid2{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(3, auto);
+}
+
+.grid2 div{
+    padding: 5px;
+    background-color: rgb(50, 50, 50);
+    color: rgb(253, 125, 21);
+    text-align: center;
+    align-items: center;
+}
+
+/* HOJA DE CONTACTOS */
+
+#titulo{
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+
+main form {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(73, 69, 69, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(../img/pexels-photo.jpg);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+main h2{
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+main form input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+}
+
+#ubicacion div{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(50, 50, 50);
+
+}
+
+/* INICIAMOS CON EL MEDIA QUERIES. MODO DESKTOP */
+@media (min-width: 768px){
+    body{
+        background: linear-gradient(to top, #f77b28,#181818 , #665b4f, #f77b28);
+    }
+    button{
+        font-size: 20px;
+        color: rgb(253, 125, 21);
+        font-weight: bold;
+        padding: 10px 50px;
+        border-radius: 20px;
+        border: 3px solid black;
+        border: 2px 2px 10px rgb(0, 0, 0, 0,5);
+        background-color: rgb(50, 50, 50);
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    button:hover{
+        background-color: rgb(253, 125, 21);
+        color:aliceblue;
+    }
+    
+        /* encabezado */
+    
+        header .container{
+            flex-direction: row;
+            justify-content:center;
+        }
+    
+        header .menu {
+            flex-direction: row;
+            padding-bottom: 0;
+            padding-bottom: 10px;
+        }
+    
+        /* index */
+    
+        #nosotros .container{
+            display:flex;
+            flex-direction: initial;
+            justify-content: center;
+        }
+    
+        #nosotros h2{
+            color: black;
+        }
+    
+        #nosotros .texto{
+            width: 50%;
+            max-width: 600px;
+            font-weight: bold;
+            padding: 20px 150px;
+            text-align: initial;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        /* parte problematica de seccion "nosotros , profes" */
+    
+        .profes{
+            display: flex;
+            justify-content: center;
+        }
+    
+        #profesionales p{
+            display: block;
+            margin-bottom: 30px;
+        }
+    
+        .carta{
+            padding: 50px;
+            background-size: 100% 150px;
+            background-repeat: no-repeat;
+    
+        }
+    
+        /* footer */
+    
+        footer{
+            justify-content: flex-end;
+        }
+    
+        /* Grid parte servicios full */
+    
+        .grid{
+            display: grid;
+            background-color: aliceblue;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+        }
+    
+        .grid div{
+            text-align: center;
+            border:  5px solid black;
+            justify-content:center;
+            padding: 5px;
+        
+        
+        }
+    
+        .grid .tituloss{
+            grid-area: 1 / 1 / 2 / 5;
+        }
+    
+        .grid .texto1{
+            grid-area: 2 / 1 / 3 / 2;
+            display: flex;
+            flex-direction: row;
+        }
+    
+        .grid .texto2{
+            display: flex;
+            flex-direction: row;
+            grid-area: 3 / 1 / 4 / 2;
+    
+        }
+        .grid .texto3{
+            display: flex;
+            flex-direction: row;
+            grid-area: 4/ 1 / 5 / 2;
+    
+        }
+        .grid .texto4{
+            display: flex;
+            flex-direction: row;
+            grid-area: 5/ 1 / 6 / 2;
+        }
+    
+        .grid .img__clase1{
+            grid-area: 2 / 2 / 3 /3;
+            
+        }
+        .grid .img__clase2{
+            grid-area: 3 / 2 / 4 /3;
+            
+        }
+        .grid .img__clase3{
+            grid-area: 4 / 2 / 4 / 3;
+            
+        }
+        .grid .img__clase4{
+            grid-area: 5 / 2 / 5 / 3;
+            
+        }
+    
+        .grid .sidebar{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            grid-area: 2 / 3 / 6 / 5;
+        }
+    
+        /* damos "estilo" */
+    
+        .grid h3{
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 30px;
+        }
+    
+        .grid p{
+            font-size: 18px;
+            margin: auto;
+        }
+    
